@@ -1,0 +1,192 @@
+Introduction Swarm Robotics
+ANGIE SHIA
+IEEE RAS REGION 6
+SPECIAL TOPICS CHAIRWhat Swarm Robotics?
+ In nutshell, swarm robotics (SR) basically large number robots mimicking insects animals gather act 
+together collective ants bees. 
+ Historically, robots swarm robotics identical, preferably small. This homogeneous model.
+ Today call extensions heterogeneous 
+model.  We will discuss tutorials.Why?
+ The cross section large ant hill solid dome structure passage ways air vents ( try checking tenants still intact, will yield unhappy 
+outcomes, particularly fire ants). 
+ Dome shape one enforced structures. 
+Another perk dome shape, rains, rain 
+trickles instead flooding habitat holes. Scientists intrigued long time seemly simple creatures can construct something intelligent. Why?  (con’t)
+ Moreover, communicate complete task? Who decides ? 
+ The ant hill just one amazing feat ants, also weave ants join bodies together can float water, escape flood. This weave carries ants rotate formation drown. This social behavior distributed collective intelligence. The ants demonstrated society sum far parts. 
+ If can recreate ability group simplistic 
+robots, opportunities endless.Don’t We Multi-agent s Already?
+ Yes, historical definition (homogenous) swarm robotics comes clarify .
+ The original intent introducing swarm robotics separate research meant address need large 
+numbers small, cheap robots moving working together swarm. This includes ability perform physical formation like weave ants. 
+ Robots expected simplistic cheaper can mass produce; large numbers acts 
+like nodes internet - destruction single 
+point/section will annihilate swarm.It’s Family…
+ SR Multi-agents (MAS). MAS predecessor swarm, way Distributed AI (DAI) predecessor MAS.
+ MAS mainly multiple robots 
+working together. It created foundation communication, coordination, task planning, distributed agent frameworks.
+ SR needs scale potentially thousands robots. 
+Many old MAS algorithms support large 
+numbers address robot physical formation. 
+ However, another branch robotics – modular robotics, tackling .Architectures
+ Swarm systems trace heritage Blackboard systems 
+(DAI). Each robot designer may add architecture framework. The following used swarms:
+ Deliberative Reasoning Architecture (sense, think, react) – layered, top- approach
+ Reactive Architecture (sense, react) – horizontal decomposition. Modules work parallel
+ Hybrid architecture – combines deliberative reactive architecture. It comes three 
+kinds style:
+1. Managerial 
+ Much like deliberative task allocation layer. Top level higher planning, pass next layer, refines decomposes pass forth. 
+The lowest level reactive. This information passed upward, may readjust task commands. Each layer tries resolve issues will request help parent layer resolve issue.
+2. State hierarchies
+ Able identify activities reactive deliberative – reactive activity state.
+3. Model-oriented
+ More top managerial. They manipulate global world model. The global world 
+model acts virtual sensor provide perception behaviors.Types Robots Used
+1. Reconfigurable robots
+Today, trend merging evolutionary algorithms robot 
+hardware, particularly seen “reconfigurable modular 
+robots”[3][32][33][34][12][13], may also called “evolutionary robots” “self 
+assembly robots”. Basically, robots consists modules, , response environment, stimuli, simulated pheromones [9], may 
+reconfigure reason - getting around obstacle. Richard 
+Beck[3] explained typical physical requirements robots:
+ Shape - must uniform. This makes easier reconfigure perform self repair. It also helpful shapes optimized physical structures wiring can easily included
+ Mechanical – keep , keep simple. Also, lightweight. The connections modules must tight yet easily connected disconnected.
+ Electrical – electrical components required power. However, components, actuators, mandatory enables robot linear rotational movements. 
+Furthermore, many actuators modular robots (bigger degree freedom), power 
+consumption actuator must efficient.Types Robots Used (con’t)
+2. Miniature (swarm) robots
+Some miniature robots include following: Sandia Laboratory created dime size robots [25] mimic swarm insects. Stoeter Pananikolopoulos created “jumping robot” [3]. Physical requirements:
+ Mechanical – similar full size robot just smaller version. Exact items depends robot designed
+ Electronic – similar full size robot just smaller version.
+ Sensors – It can surprisingly large small scout. It can include magnetometers, 
+accelerometers, camera, video transmitter, microphone, vibration sensors forth.
+ Communications – usually wireless, analog.
+ Computational System - generally minimal. Due size, carry much 
+computation power .
+ Power - low consumption.Types Robots Used (Con’t)
+ Sensors – depends robot used .
+ Communications – There three types communication – intra-module (within module), inter-modules ( n modules) global. The communication types 
+can wired wireless.
+ Power – The board battery must able support robot least hours various configurations robot.
+ Computation system – Aside required handling communication, 
+sensors, forth, modular system also require distributed control software enough memory buffered communication. Furthermore, since robots modular, system must allow designers add new modules. Hence, interface 
+support new modules included.Issues
+ Issues sensor fusion
+Petriu et al [29] list following issues sensor fusion: 
+communication delay randomness different sensor agents.
+ Issues miniature robots
+According Stoeter[5], 
+miniature robots 10cm less able powerful 
+computer board. 
+miniature robot generally lacks reliable communication links. This robots generally run low power sources, turn 
+can support low power transmitters. These transmitters powerful, thus run problems transmitting data receiving control instructions central control.Environment Programming Languages
+There many Robotic Development Environments 
+currently available. We list just :
+ ARTIS [14]: real time agent architecture develop agent.
+ OROCOS [30]: modular framework robot machine 
+control
+ IDEA [31]: framework planning execution agents
+ ROCI [36]: framework support distributed sensors actuators.
+ CLARAty [15]: framework generic reusable 
+components robotsDeployment Consideration
+Some consideration issues brought Chong et al [4] 
+regarding following issues deployment utilization robots:
+Programming robots tedious overwhelming task average programmer.
+The complexity, dynamical, unstructuredness environment 
+also makes difficult pre-determine code.
+Large amount knowledge required reasoning
+Intelligence knowledge centralized robot controller.
+Some issues addressed robotic learning. REFERENCES
+ [1] E.H. Durfee,”Distributed Artificial Intelligence”, University Michigan, NSF research paper,
+ [18] R. Lundh,et al, “Automatic Configuration Multi-Robot Systems: Planning Multiple Steps”,
+ 1994.
+ Proceedings European Conference Artificial Intelligence, 2008.
+ [2] Josh Bongard, "Biologically Inspired Computing," Computer, vol. 42, . 4, pp. 95-98, Apr. 2009
+ [19] M. Hoogendoorn, M. Gini, C. Jonker, “Decentralized Task Allocation using Magnet: An Empirical
+ [3] R. Beck, “Analysis, Design Implementation Building Blocks Self-Reconfigurable
+ Evaluation Logistics Domain”, ICEC, 2007.
+ Modular robots”, M.S. Thesis, University Southern Denmark, 2003.
+ [20] M. Dias, “Market-Based Multirobot Coordination: A Survey Analysis”, CMU-RI-TR-05-13,
+ [4] N.Y. Chong et al, “Robots Self-Organizing Knowledge Networks”, Proceedings International
+ 2005.
+ Conference Robotics Automation, 2004.
+ [21] “Minority Report”, Internet Movie Database, 2002. [Online]. Available:
+ [5] S. Stoeter, N. Papanikolopoulos, “Autonomous Stair-Climbing With Miniature Jumping Robots”,
+ http://www.imdb.com/title/tt0181689.[Accessed: Dec. 30, 2009]
+ IEEE Transactions Systems, Man, Cybernetics, vol 35, . 2, 2005.
+ [22] D. Hambling, “Swarms robots join army”, The Guardian, Aug. 21 2008. [Online].
+ [6] B. Badano, “A Multi-Agent Architecture With Distributed Coordination Autonomous Robot”,
+ Available: http://www.guardian.co.uk/technology/2008/aug/21/robots.researchanddevelopment.
+ P.h.D Thesis, University Girona, 2008.
+ [Accessed: Dec. 30, 2009].
+ [7] “Killer Military Robots Pose Latest Threat To Humanity”, University Sheiffeld News Release, 27
+ [23] “Scalable Swarm Robotics”, 25th Chaos Communication Congress, 2008.
+ February 2008.[Online]. Available: http://www.shef.ac.uk/mediacentre/2008/970.html.
+ Available:http://events.ccc.de/congress/2008/Fahrplan/events/2890.en.html. [Accessed: Dec. 30, 
+ [8] “Appendix E: Service Robots”, Disruptive Technologies Global Trend 2025, SRI Consulting
+2009]
+ Business Intelligence, 2008. REFERENCES
+ [24] I.D. Couzin, J. Krause, R. James, G.D. Ruxton, N.R. Franks, “Collective memory spatial
+ [1] E.H. Durfee,”Distributed Artificial Intelligence”, University Michigan, NSF research paper,
+ sorting animal groups”, Journal Theoretical Biology, v. 218, pp. 1-11, 2002.
+ 1994.
+ [25] Mini Autonomous Robot Vehicle (MARV), Sandia Laboratory News Release, Jan. 31, 2001
+ [2] Josh Bongard, "Biologically Inspired Computing," Computer, vol. 42, . 4, pp. 95-98, Apr. 2009
+ [Online] Available: http://www.sandia.gov/media/NewsRel/NR2001/minirobot.htm [Accessed: Dec.
+ [3] R. Beck, “Analysis, Design Implementation Building Blocks Self-Reconfigurable
+ 30, 2009]
+ Modular robots”, M.S. Thesis, University Southern Denmark, 2003.
+ [26] T. Ishida, L. Gasser, M. Yokoo, “Organization Self-Design Distributed Production Systems”,
+ [4] N.Y. Chong et al, “Robots Self-Organizing Knowledge Networks”, Proceedings International
+ IEEE Transactions Knowledge Data Engineering, vol. 4 , . 2, pp. 123 – 134,1992.
+ Conference Robotics Automation, 2004.
+ [27] S. Cammarata, D. McArthur, R. Steeb, “Strategies cooperation distributed problem solving”,
+ [5] S. Stoeter, N. Papanikolopoulos, “Autonomous Stair-Climbing With Miniature Jumping Robots”,
+ Proceedings Eighth international joint conference Artificial intelligence, vol.2, pp.
+ IEEE Transactions Systems, Man, Cybernetics, vol 35, . 2, 2005.
+ 767-770,1983.
+ [6] B. Badano, “A Multi-Agent Architecture With Distributed Coordination Autonomous Robot”,
+ [28] D. Corkill V. Lesser, “Use Meta-Level Control Coordination Distributed Problem-
+ P.h.D Thesis, University Girona, 2008.
+ Solving Network”, Proceedings Eighth International Joint Conference Artificial Intelligence,
+ [7] “Killer Military Robots Pose Latest Threat To Humanity”, University Sheiffeld News Release, 27
+ pp. 748–756, Aug. 1983.
+ February 2008.[Online]. Available: http://www.shef.ac.uk/mediacentre/2008/970.html.
+ [29] E. Petriu, “Robotic Sensor Agents”, IEEE Instrumentation Measurement Magazine, 2004.
+ [8] “Appendix E: Service Robots”, Disruptive Technologies Global Trend 2025, SRI Consulting
+ [30] “OROCOS Project”, [Online].Available:http://www.orocos.org. [Accessed: Sept. 12, 2004].
+ Business Intelligence, 2008.
+ [31] N. Muscettola, G. Dorais, C. Fry, R. Levinson, C. Plaunt, “IDEA: Planning Core  [9] W.M. Shen, P. Will, A. Galstyan, C.M. Chuong , “Hormone Inspired Self-Organization  Autonomous Reactive Agents”, Proceedings 3rd International NASA Workshop Planning  Distributed Control Robotics Swarms”, Autonomous Robots, Kluwer Academic Publisher, vol. 17,
+ Scheduling Space, 2002.
+ pp. 93-105, 2004.
+ [32] M. Yim, "Locomotion Gaits Polypod", Proceedings IEEE International Conference  [10] M. Lemay, F. Michaud, D. Létourneau J.M. Valin, “Autonomous Initialization Robot
+ Robotics Automation, 1994.
+ Formations”, Proceedings IEEE International Conference robotics Automation, 2004.
+ [33] C. Eldershaw, M. Yim, D. Duff, K. Roufas Y. Zhang,"Modular self-reconfigurable robots",
+ [11] E. Bahceci, O. Soysal, “A Review: Pattern Formation Adaption Multi-Robot Systems”,
+ Robotics future land warfare seminar workshop, Defense Science Technology Organization,
+ CMU-RI-TR-03-43, 2003.
+ 2002.
+ [12] J. Werfel, R. Nagpal, “Towards common comparison framework global- -local
+ [34] S. Murata, H. Kurokawa, S. Kokaji, “Self-assembling machine”, Proceedings IEEE
+ programming self-assembling robotic systems”, Workshop Self-Reconfigurable Robots & Systems
+ International Conference Robotics Automation, pp. 441–448, 1994.
+ Applications, IROS, 2007.
+ [35] B. Innocenti Badano, “A Multi-Agent Architecture Distributed coordination  [13] J. Werfel, R. Nagpal, “Extended Stigmergy Collective Construction”, IEEE Computer Society,
+ autonomous robot”, Ph.D. Thesis, Universitat de Girona, Oct. 2008.
+ vol. 2, . 2, Mar/Apr 2006.
+ [36] L. Chaimowicz, A. Cowley , V. Sabella , C. J. Taylor, “ROCI: A Distributed Framework Multi-
+ [14] V. Botti, C. Carrascosa, V.Julian, J. Soler, “Modelling Agents Hard Real-Time Environments”,
+ Robot Perception Control”, Proceedings 2003 IEEE/RJS International Conference  LNCS, vol 1647, pp. 63-76, 1999.
+ Intelligent Robots Systems, 2003.
+ [15] I.A. Nesnas, "CLARAty: A Collaborative Software Advancing Robotic Technologies," NASA
+ [37] García-Fornes, A., Terrasa, A., Botti, V., Crespo, “Analyzing Schedulability Hard Real-Time
+ Science Technology Conference, June 2007.
+ Artificial Intelligence Systems”, Engineering Applications Artificial Intelligence, pp. 369-377,1997.
+ [16] G. Kumar, V. Vijayan, “A Multi-agent Optimal Path Planning Approach Robotics
+ Intelligence, pp. 369-377,1997.
+ Environment”, International Conference Computational Intelligence Multimedia Applications,
+ 2007.
+ [17] K. S. Barber, DC Han, “Multi-Agent Planning Dynamic Adaptive Autonomy”, Texas Higher
+ Education Coord Board, research grant 003658415, 003658452.
